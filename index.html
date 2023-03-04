@@ -6,32 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password generator</title>
     <link rel="stylesheet" type="text/css" href="mystyle.css">
+
 </head>
 <body>
-    <div>
+    <div class="container">
         <div class="header">
         <h1>Generate a</h1>
         <h2>random password</h2>
         <p class="head-content">Never use an insecure password again</p>
         </div>
-        <form class="form">
+        <div class="form">
             <label>Password length</label>
-            <input type="text" name="number" placeholder="Enter a value here...">
-        </form><br>
-        <button class="btn-gen">Generate passwords</button><br>
+            <input type="text" id="inputValue" name="number" placeholder="Enter a value here...">
+        </div><br>
+        <button id="btn-gen" onclick="displayPasswords()">Generate passwords</button><br>
         <div class="div-1"></div>
         <div class="grid-container">
         <div class="grid1">
-            <p>1...</p>
+            <p id="pass-1">1...</p>
         </div>
         <div class="grid2">
-            <p>2...</p>
+            <p id="pass-2">2...</p>
         </div>
         <div class="grid3">
-            <p>3...</p>
+            <p id="pass-3">3...</p>
         </div>
         <div class="grid4">
-            <p>4...</p>
+            <p id="pass-4">4...</p>
         </div>
         </div>
     </div>
